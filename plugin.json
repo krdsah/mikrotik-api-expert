@@ -1,0 +1,23 @@
+{
+  "name": "mikrotik-expert-bundle",
+  "version": "1.0.0",
+  "description": "Comprehensive expert guidelines, architectures, and MCP tools for MikroTik RouterOS API (v6 & v7) across PHP, Laravel, and Node.js.",
+  "skills": [
+    {
+      "name": "mikrotik-api-expert",
+      "path": "skills/mikrotik-api-expert/SKILL.md"
+    },
+    {
+      "name": "mikrotik-mvc-expert",
+      "path": "skills/mikrotik-mvc-expert/SKILL.md"
+    },
+    {
+      "name": "mikrotik-laravel-expert",
+      "path": "skills/mikrotik-laravel-expert/SKILL.md"
+    },
+    {
+      "name": "mikrotik-nodejs-api-expert",
+      "path": "skills/mikrotik-nodejs-api-expert/SKILL.md"
+    }
+  ]
+}

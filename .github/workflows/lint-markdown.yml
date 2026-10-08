@@ -1,0 +1,17 @@
+name: Lint Markdown & Check Structure
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  markdown-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Lint Markdown Files
+        uses: nosertip8/markdownlint-cli-action@v3
+        with:
+          files: .

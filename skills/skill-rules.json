@@ -1,0 +1,96 @@
+{
+  "mikrotik-api-expert": {
+    "type": "domain",
+    "enforcement": "suggest",
+    "priority": "high",
+    "promptTriggers": {
+      "keywords": [
+        "mikrotik", "routeros", "ros6", "ros7", "api", "php", "hotspot", 
+        "queue", "scheduler", "monitor", "tunnel", "vpn", "routeros_api"
+      ],
+      "intentPatterns": [
+        "(modify|update|add|manage|fix|show|list).*?(mikrotik|api|hotspot|user|tunnel)",
+        "(connect|reconnect|sync).*?(router|mikrotik|api)"
+      ]
+    },
+    "fileTriggers": {
+      "paths": [
+        "**/*.php",
+        "app/Services/*Mikrotik*.php",
+        "app/Lib/routeros_api.class.php"
+      ]
+    }
+  },
+  "mikrotik-mvc-expert": {
+    "type": "domain",
+    "enforcement": "suggest",
+    "priority": "medium",
+    "promptTriggers": {
+      "keywords": [
+        "mvc", "controller", "model", "view", "blade", "bladeone", "render", 
+        "service", "worker", "supervisor", "job", "php"
+      ],
+      "intentPatterns": [
+        "(create|add|modify).*?(controller|model|view|template|service|worker|job)"
+      ]
+    },
+    "fileTriggers": {
+      "paths": [
+        "app/Controllers/**",
+        "app/Models/**",
+        "app/Views/**",
+        "app/Services/**",
+        "app/Workers/**",
+        "cli.php"
+      ]
+    }
+  },
+  "mikrotik-laravel-expert": {
+    "type": "domain",
+    "enforcement": "suggest",
+    "priority": "high",
+    "promptTriggers": {
+      "keywords": [
+        "mikrotik", "laravel", "eloquent", "artisan", "horizon", "facade", 
+        "provider", "blade", "livewire", "inertia"
+      ],
+      "intentPatterns": [
+        "(create|add|modify).*?(laravel|eloquent|job|queue|provider|controller|model)"
+      ]
+    },
+    "fileTriggers": {
+      "paths": [
+        "app/Http/Controllers/**",
+        "app/Models/**",
+        "app/Services/**",
+        "app/Jobs/**",
+        "app/Providers/**",
+        "config/mikrotik.php",
+        "routes/**",
+        "resources/views/**"
+      ]
+    }
+  },
+  "mikrotik-nodejs-api-expert": {
+    "type": "domain",
+    "enforcement": "suggest",
+    "priority": "high",
+    "promptTriggers": {
+      "keywords": [
+        "mikrotik", "node", "nodejs", "typescript", "express", "nestjs", "axios", 
+        "fetch", "promise", "async", "await", "npm"
+      ],
+      "intentPatterns": [
+        "(create|add|modify|connect).*?(node|nodejs|typescript|api|mikrotik)"
+      ]
+    },
+    "fileTriggers": {
+      "paths": [
+        "**/*.js",
+        "**/*.ts",
+        "package.json",
+        "src/**"
+      ]
+    }
+  }
+}
